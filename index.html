@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/white.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+<body>
+<div class="reveal">
+	<div class="slides">
+		<section data-background="files/background.png">
+			<h2>This slide will have a full-size background image.</h2>
+		</section>
+		<section>
+			<div>YOU MUST CHOOSE!</div>
+		</section>
+		<section>
+			<img src="files/john.png">
+			<div>This is John.</div>
+		</section>
+		<section>
+			<img src="files/john_fisheries.png">
+			<div>John is a NOAA Fisheries Scientist.</div>
+		</section>
+		<section>
+			<img src="files/john_fisheries.png">
+
+			<div>John wants to generate a report on the effects of water temperature on Ocean Quahogs.</div>
+				<span class="fragment">
+					<a style="position:absolute; top:-10px; right:-5px; z-index:-1">
+					<img src="files/quahog.png"  width="300">
+					</a>
+					<a style="position:absolute; top:-10px; right:700px; z-index:-1">
+					<img src="files/temp.png" width="300">
+					</a>
+				</span>
+		</section>
+		<section>
+			<span>
+			<img src="files/john_fisheries.png">
+			<div>
+				This will require John to do a lot of work for each new dataset. Cleaning, joining, and analyzing each.
+			</div>
+				<span class="fragment">
+					<a style="position:absolute; top:0px; right:275px; z-index:-1">
+					<img src="files/sweat.png"  width="400">
+					</a>
+				</span>
+			</span>
+		</section>
+		<section>
+			<img src="files/john_fisheries_happy.png">
+			<div>John hears about AQUAVIEW.</div>
+		</section>
+		<section>
+			<div>
+				AQUAVIEW provides re-producible pipelines for data ingestion, metadata creation, report generation, archiving, and information accessibility.
+			</div>
+		</section>
+		<section>
+			<div>
+				AQUAVIEW pipelines can be triggered by changes in data, run on a schedule, or on demand.
+			</div>
+		</section>
+		<section>
+			<div>
+				John runs the report and finds that water temperature has a significant effect on Ocean Quahogs, with
+				movement north of their normal range corresponding to cooler water temperatures.
+			</div>
+		</section>
+	</div>
+</div>
+
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script src="plugin/math/math.js"></script>
+<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				slideNumber: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+			});
+		</script>
+</body>
+</html>
